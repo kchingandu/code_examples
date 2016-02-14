@@ -1,0 +1,30 @@
+<% _.each(data.Tables, function(table, index) {
+var headers = _.keys(table.Rows[0]);
+%>
+
+<table class="datagrid">
+
+    <tr>
+        <% _.each(headers, function(header){ %>
+
+        <th><%= header %></th>
+
+        <%})%>
+    </tr>
+
+    <% _.each(table.Rows, function(row, index){
+    var odd = index % 2 ? 'class="odd"' : '';
+    %>
+    <tr>
+        <% _.each(headers, function(header){%>
+
+        <td
+        <%= odd %> > <%= row[header]%> </td>
+
+        <%});%>
+    </tr>
+
+    <%});%>
+
+</table>
+<%})%>

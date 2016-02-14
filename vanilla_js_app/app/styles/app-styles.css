@@ -1,0 +1,204 @@
+@font-face {
+    font-family: roboto-light;
+    src: url('../fonts/roboto-light.ttf');
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url('../fonts/roboto-regular.ttf');
+}
+
+@font-face {
+    font-family: roboto-light-italic;
+    src: url('../fonts/roboto-light-italic.ttf');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    color: #3e3e3e;
+    font-family: roboto-light, sans-serif;
+    font-size: 13px;
+    background-color: #e5e5e5;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+#main, #sidebar, #nav, #table-container, #footer {
+    background-color: #fff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#main ul {
+    margin: 1em 2em;
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 1em;
+    margin-bottom: 1em;
+    overflow: auto;
+}
+
+#header h1 {
+    font-size: 3em;
+    float: left;
+    font-family: roboto-light;
+}
+
+#header h1 a {
+    display: block;
+    text-indent: -10000px;
+    width: 447px;
+    height: 105px;
+    overflow: hidden;
+    background: url(http://www.kurtosys.com/_images/kurtosys_logo.png) top left no-repeat;
+}
+
+#search {
+    float: right;
+}
+
+#nav {
+    margin-bottom: 1em;
+    background-color: #fff;
+
+}
+
+#nav > ul {
+    list-style: none;
+    height: 2.5em;
+    font-family: roboto-regular;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+#nav > ul > li > a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #3e3e3e;
+
+}
+
+#nav a:hover {
+    color: #fff;
+    background-color: #1176bc;
+    text-decoration: none;
+}
+
+#nav > ul > li > ul {
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    padding-left: 0;
+    border: 1px solid #d3d3d3;
+}
+
+#nav > ul > li > ul > li > a {
+    display: block;
+    padding: 0.5em 1em;
+    white-space: nowrap;
+    color: inherit;
+    text-decoration: none;
+}
+
+#nav > ul > li:hover > ul {
+    display: block;
+}
+
+#main {
+    float: left;
+    width: 680px;
+    padding: 1em;
+    clear: both;
+    margin: 0 20px 1em 0;
+}
+
+#sidebar {
+    float: left;
+    width: 280px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#footer {
+    clear: both;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+table {
+    width: 480px;
+    text-align: left;
+    margin: 25px 0;
+    border-collapse: collapse;
+    border: solid 1px #e7e7e7;
+}
+
+table th {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #039;
+}
+
+table td {
+    padding: 8px;
+    color: #669;
+}
+
+table .odd {
+    background: #e7e7e7;
+}
+
+#table-container {
+    padding: 5px;
+    position: relative;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
