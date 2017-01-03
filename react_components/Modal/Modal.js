@@ -5,9 +5,6 @@ const Modal = (props) => {
 
     const { isOpen, content:Content, contentProps } = props.modalConfig;
 
-    console.log(Content);
-
-
     return isOpen && renderModal();
 
     function renderModal() {
@@ -23,8 +20,6 @@ const Modal = (props) => {
 };
 
 const mapStateToProps = state => {
-    console.log(state);
-
     return { modalConfig: state };
 };
 
