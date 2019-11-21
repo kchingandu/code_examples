@@ -1,0 +1,38 @@
+.searchBarSuggestions {
+  top: -1px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 336px;
+  width: 450px;
+  font-size: 100%;
+  list-style: none;
+  background: black;
+  overflow-y: scroll;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.searchBarSuggestions li {
+  cursor: default;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+  padding: 12px 7px 12px 10px;
+}
+
+.searchBarSuggestions li:last-child {
+  border: none;
+}
+
+.searchBarSuggestions::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.highlighted {
+  color: black;
+  background: #FFF;
+  font-weight: 100;
+}

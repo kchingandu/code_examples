@@ -1,0 +1,17 @@
+{
+  "name": "template-creator",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "prompts": "^2.2.1",
+    "fs-extra": "^8.1.0"
+  },
+  "devDependencies": {
+    "minimist": "^1.2.0"
+  }
+}
